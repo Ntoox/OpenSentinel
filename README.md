@@ -1,3 +1,5 @@
+![OpenSentinel Logo](logo.jpg)
+
 # OpenSentinel
 
 **Your AI agent's last line of defence.** OpenSentinel sits between any AI agent and the real world — intercepting every tool call, classifying its risk, and asking *you* for approval (via biometrics on your phone) before anything impactful happens.
