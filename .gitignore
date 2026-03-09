@@ -1,0 +1,52 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Runtime / persistence ─────────────────────────────────────────────────────
+ledger.db
+ledger.db-wal
+ledger.db-shm
+phone_public.pem
+phone_private.pem
+perf_results.json
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.pem
+*.key
+
+# ── Node / Expo ───────────────────────────────────────────────────────────────
+node_modules/
+.expo/
+dist/
+web-build/
+*.jsbundle
+
+# ── macOS / Windows / Linux ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Test artefacts ────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Private / internal docs ───────────────────────────────────────────────────
+docs/beta-release-checklist.md
+docs/android-dev-build.md
+tests/

@@ -1,0 +1,42 @@
+# Sacred Gatekeeper — Risk Rules
+# Copy this file to your working directory (or set SG_CONFIG env var to its path).
+# All lists are merged left-to-right if multiple configs are loaded.
+
+[critical]
+# These actions are ALWAYS paused for phone approval, no exceptions.
+actions = [
+  "run_shell",
+  "execute_code",
+  "write_arbitrary_file",
+  "curl",
+  "wget",
+]
+
+[high]
+# Specific action names that require phone approval
+actions = [
+  "delete_file",
+  "git_push",
+  "deploy",
+  "drop_table",
+  "purge",
+]
+# Regex patterns matched against the full JSON param blob (case-insensitive)
+param_patterns = [
+  'evil\.com',
+  'malware',
+  '\.sh\b',
+  'curl.*\|.*sh',
+  'rm\s+-rf',
+  'wget.*\|',
+]
+
+[medium]
+# Require approval but less urgently
+actions = [
+  "send_email",
+  "upload_file",
+  "create_pull_request",
+  "post_message",
+  "commit",
+]

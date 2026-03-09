@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 16.16.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EAS_PROJECT_ID": "198a99ff-1247-4409-af60-a1514a1067d8",
+        "ANDROID_APPLICATION_ID": "com.sacredgatekeeper.kernel",
+        "EXPO_PUBLIC_BROKER_HTTP": "http://2.216.75.117:9998",
+        "EXPO_PUBLIC_SUPABASE_URL": "https://wcmvegqmewilypdvsgly.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjbXZlZ3FtZXdpbHlwZHZzZ2x5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwODA4NTAsImV4cCI6MjA4ODY1Njg1MH0.3RgR9piDMju8nl8JceCImukBP_WWdAt6IcaftcBSs4E"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview-apk": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  }
+}
